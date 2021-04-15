@@ -32,7 +32,7 @@ import { asyncRouterMap } from '@/router/router.config';
 import { Component, Vue } from 'vue-property-decorator';
 import { Action, Mutation } from 'vuex-class';
 import { addRouters } from '@/router/index';
-// import { Modal } from 'ant-design-vue';
+import $dialog from '@/plugins/dialog';
 @Component({
 	name: 'login',
 })
@@ -62,6 +62,15 @@ export default class Login extends Vue {
 	}
 	// 登录请求
 	private async login() {
+		$dialog({
+			ok: () => {
+				console.log('ok');
+			},
+			cancel: () => {
+				console.log('cancel');
+			},
+		});
+		return;
 		// 获取用户勾选的权限
 		const checkedList = this.checkedList;
 		let permissions: any = [];

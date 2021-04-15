@@ -5,16 +5,13 @@ console.log(env);
 const configs: any = {
 	// 生产环境
 	production: {
-		// url: 'http://admin.xab.vip/api',
-		url: 'http://admin.dev2.xab.vip/api',
-		pdf: 'http://admin.dev2.xab.vip/pdf',
+		url: 'http://www.xxx.com/api',
+		url2: 'http://www.xxx.com/api',
 	},
 	// 开发环境
 	development: {
-		url: '/api',
-		pdf: '/pdf'
-		// url: 'http://192.168.0.43:9095/api',
-		// url: 'http://39.101.65.95:9095/api',
+		url: 'http://www.xxx.com/api',
+		url2: 'http://www.xxx.com/api',
 	},
 };
 
