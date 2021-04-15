@@ -3,7 +3,7 @@
 		<my-sider></my-sider>
 		<my-header></my-header>
 		<v-main>
-			<div class="container fill-height pa-md-4">
+			<div class="container pa-md-4">
 				<router-view></router-view>
 			</div>
 		</v-main>

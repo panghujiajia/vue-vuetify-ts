@@ -21,6 +21,7 @@
 								:key="i"
 								:prepend-icon="item.meta.icon"
 								no-action
+								active-class="v-list-item--active"
 							>
 								<template v-slot:activator>
 									<v-list-item-title>
@@ -30,6 +31,7 @@
 								<template v-for="(child, k) in item.children">
 									<v-list-item
 										v-if="!child.meta.invisible"
+										color="primary"
 										:key="i + k"
 										:to="`/${item.path}/${child.path}`"
 									>
